@@ -44,17 +44,28 @@ const ExpliHeader = () => {
       {/* Content wrapper to center items, but header background is full width */}
       <div className="grid grid-cols-3 items-center  px-4 sm:px-6 py-4 max-w-7xl mx-auto w-full">
         {/* Logo */}
-        <a
-          href="https://explified.com/"
-          className="flex items-center space-x-2 justify-self-start"
-        >
-          <div className="bg-[#23b5b5]/10 p-1 rounded-lg">
-            <img src={logo} className="h-12 w-12 text-[#23b5b5]" />
-          </div>
-          <span className="text-xl font-bold tracking-wide text-white">
-            Expli
-          </span>
-          <span className="text-xs md:text-sm font-semibold text-[#23b5b5] tracking-normal">
+        <div className="flex items-center gap-2 justify-self-start text-xl font-bold tracking-tighter text-white">
+          {/* Icon Box */}
+          <a
+            href="https://explified.com"
+            rel="noopener noreferrer"
+            className="text-[13px] font-medium tracking-wide"
+            style={{ color: "#1B8F8F" }}
+          >
+            {" "}
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg  text-black  ">
+              <img
+                src={logo} // or imported logo variable
+                alt="Logo"
+                className="w-12 h-12 object-contain"
+              />
+            </div>
+          </a>
+
+          <div className="flex flex-col leading-tight">
+            <span>Event</span>
+
+            {/* by Explified */}
             <a
               href="https://explified.com"
               rel="noopener noreferrer"
@@ -63,8 +74,8 @@ const ExpliHeader = () => {
             >
               by Explified
             </a>
-          </span>
-        </a>
+          </div>
+        </div>
 
         {/* Nav links – scroll to sections on the same page */}
         <nav className="hidden md:flex items-center space-x-8 justify-self-center">
@@ -95,7 +106,7 @@ const ExpliHeader = () => {
         </nav>
 
         {/* Sign in only – brand color button */}
-        <div className="flex items-center justify-self-end">
+        <div className="flex items-center col-start-3 justify-self-end">
           <a
             href="https://app.explified.com/expli"
             target="_blank"
