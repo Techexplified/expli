@@ -63,7 +63,7 @@ const ExpliHeader = () => {
           </a>
 
           <div className="flex flex-col leading-tight">
-            <span>Event</span>
+            <span>Expli</span>
 
             {/* by Explified */}
             <a
