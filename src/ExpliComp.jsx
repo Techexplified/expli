@@ -870,6 +870,7 @@ const Expli = () => {
                 >
                   <span className="text-sm font-semibold text-black tracking-wide">
                     Try Expli
+                    {/* button */}
                   </span>
 
                   <motion.div
