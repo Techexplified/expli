@@ -113,7 +113,7 @@ const ExpliHeader = () => {
             rel="noreferrer"
             className="px-5 py-2 text-sm font-semibold rounded-full bg-[#23b5b5] text-[#020617] hover:bg-[#1e9d9d] transition-colors shadow-lg"
           >
-            Try now
+            Try Expli
           </a>
         </div>
       </div>
@@ -869,7 +869,7 @@ const Expli = () => {
              flex items-center justify-center"
                 >
                   <span className="text-sm font-semibold text-black tracking-wide">
-                    Try now
+                    Try Expli
                   </span>
 
                   <motion.div
