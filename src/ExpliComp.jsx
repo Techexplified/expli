@@ -25,6 +25,7 @@ import {
 function Lurph() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-yellow-300/30">
+      <Navbar />
       {/* 1. HERO CONTAINER */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-12 lg:pt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
@@ -442,6 +443,32 @@ function Lurph() {
         </div>
       </section>
     </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <nav className="w-full border-b border-zinc-800/50 bg-[#0a0a0a]/80 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        {/* Left Side: Logo */}
+        <div className="h-20 w-24 flex items-center">
+          <img src="./lurph.jpeg" alt="lurph" className="h-full w-auto" />
+        </div>
+
+        {/* Right Side: Button */}
+        <div className="flex items-center gap-6">
+          {/* Optional: Navigation Links can be added here if needed later */}
+          <a
+            href="https://app.explified.com/expli"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-yellow-300 hover:bg-yellow-400 text-black font-bold py-2.5 px-6 rounded-xl transition-all active:scale-95 shadow-[0_0_20px_rgba(234,179,8,0.15)] text-sm"
+          >
+            Try Lurph
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
 
